@@ -1,0 +1,136 @@
+/* CSS Reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+html, body {
+  height: 100%;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+input, button, textarea, select {
+  font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+#root, #__next {
+  isolation: isolate;
+}
+/* CSS Styles */
+* {
+  font-family: "Ubuntu", sans-serif;
+}
+body {
+  padding: 0; 
+  margin: 0;
+  font-size: 1rem;
+  background-color: black;
+  color: white;
+}
+p, a, span {
+  font-weight: 300;
+}
+h1, h2, h3, h4 {
+  font-weight: 600;
+}
+.navbar {
+  display: flex; 
+  flex-direction: row; 
+  justify-content: space-evenly;
+  background-color: white;
+  color: black;
+}
+.navbar a {
+  color: black;
+}
+a {
+  text-decoration: none;
+}
+.main {
+  background-image: url(computer.jpg);
+  align-items: center;
+  text-align: center; 
+  background-size: cover;
+  padding: 80px 90px;
+  color: white;
+}
+.main button {
+  border-radius: 10px;
+  padding: 10px;
+  border: 5px solid white;
+  color: white;
+  background-color: transparent;
+  width: 234px;
+}
+.main button:hover {
+  background-color: white;
+  color: black;
+}
+.main h2 {
+  padding: 5px;
+}
+.main p {
+  padding: 5px;
+}
+.about {
+  padding: 80px 90px;
+  text-align: center;
+}
+.Skills {
+  background-color: white; 
+  color: black;
+  padding: 80px 90px;
+  text-align: center;
+}
+.skill-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.projects {
+  background-color: darkgray;
+  padding: 80px 90px;
+  text-align: center;
+}
+.projects h2 {
+  margin: 5px;
+}
+.project img {
+  border-radius: 10px;
+}
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 3fr));
+}
+.project a {
+  color: white;
+}
+.footer {
+  background-color: darkslategray;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 30px 40px;
+}
+.footer ul {
+  list-style-type: none;
+} 
+.footer a {
+  color: white;
+} 
+@media (width < 37.5) {
+  .footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
